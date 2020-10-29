@@ -8,7 +8,7 @@
         </div>
         <div class="col-12">
             @if($cart)
-                <div class="col-12" sytle="overflow-x: auto;">
+                <div class="col-12" style="overflow-x: auto;">
                     <table class="table table-striped">
                         <thead>
                             <tr>
