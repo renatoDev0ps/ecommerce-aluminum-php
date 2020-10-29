@@ -5,11 +5,11 @@
         <div class="col-12">
             <div class="col-12 mb-3 d-flex justify-content-start align-items-center">
                 @if($store->logo)
-                    <img src="{{asset('storage/' . $store->logo)}}" alt="Logo da {{$store->name}}" class="img-fluid" style="width:60px; height:60px; border-radius: 50%;">
+                    <img src="{{asset('storage/' . $store->logo)}}" alt="Logo da {{$store->name}}" class="img-fluid" style="width:50px; height:50px; border-radius: 50%;">
                 @else
-                    <img src="http://via.placeholder.com/60x60.png?text=logo" alt="Sem imagem" class="img-fluid" style="width:60px; height:60px; border-radius: 50%;">
+                    <img src="http://via.placeholder.com/50x50.png?text=logo" alt="Sem imagem" class="img-fluid" style="width:50px; height:50px; border-radius: 50%;">
                 @endif
-                <span class="ml-3" style="font-size: 32px;">{{$store->name}}</span>
+                <span class="ml-3" style="font-size: 22px;">{{$store->name}}</span>
             </div>
             <p>{{$store->description}}</p>
             <p>
