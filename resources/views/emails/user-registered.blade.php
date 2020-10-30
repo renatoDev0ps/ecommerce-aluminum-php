@@ -110,7 +110,7 @@
                                                             <tbody style="display: inline-block;">
                                                                 <tr style="display: inline-block;">
                                                                     <td align="center" style="border-collapse: collapse; display: inline-block; padding: 15px 20px;">
-                                                                        <a target="_blank" href="http://localhost" style="text-decoration: none; font-family: arial; box-sizing: border-box; color: #fff; font-weight: bold; margin: 0px; padding: 0px; text-align: center; font-size: 15px; display: inline-block; word-wrap: break-word; width: 100%;">
+                                                                        <a target="_blank" href="https://aluminumloversbike.com.br" style="text-decoration: none; font-family: arial; box-sizing: border-box; color: #fff; font-weight: bold; margin: 0px; padding: 0px; text-align: center; font-size: 15px; display: inline-block; word-wrap: break-word; width: 100%;">
                                                                             Ir para loja
                                                                         </a>
                                                                     </td>

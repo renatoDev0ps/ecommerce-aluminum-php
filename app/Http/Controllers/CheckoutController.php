@@ -28,6 +28,19 @@ class CheckoutController extends Controller
         return view('checkout', compact('cartItems'));
     }
 
+    public function sold()
+    {
+        if (!auth()->check()) {
+            return redirect()->route('login');
+        }
+
+        if(!session()->has('cart')) return redirect()->route('home');
+
+        $user = auth()->user();
+
+        return view('sold', compact('user'));
+    }
+
     public function process(Request $request)
     {
         try {

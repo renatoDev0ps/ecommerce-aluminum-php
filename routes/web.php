@@ -26,6 +26,7 @@ Route::prefix('cart')->name('cart.')->group(function(){
 
 Route::prefix('checkout')->name('checkout.')->group(function() {
     Route::get('/', 'CheckoutController@index')->name('index');
+    Route::get('/sold', 'CheckoutController@sold')->name('sold');
     Route::post('/process', 'CheckoutController@process')->name('process');
     Route::get('/thanks', 'CheckoutController@thanks')->name('thanks');
 });
