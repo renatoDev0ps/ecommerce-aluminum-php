@@ -26,7 +26,7 @@ class ProductController extends Controller
     {
         $userStore = auth()->user()->store;
 
-        $products = !$userStore ? null : $userStore->products()->get();
+        $products = !$userStore ? null : $userStore->products->get();
 
         return view('admin.products.index', compact('products'));
     }
