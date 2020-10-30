@@ -49,7 +49,7 @@
                     @endif
                     <i class="fa fa-bell ml-1" style="color:whitesmoke;"></i>
                 </a>
-                <span class="nav-link" style="color:whitesmoke;">{{auth()->user()->email}}</span>
+                <span class="nav-link" style="color:whitesmoke;">{{auth()->user()->name}}</span>
                 <a href="#" onclick="event.preventDefault();
                                         document.querySelector('form.logout').submit();" class="btn btn-outline-success my-2 my-sm-0">Logout</a>
                 <form action="{{route('logout')}}" class="logout" method="POST" style="display:none;">
