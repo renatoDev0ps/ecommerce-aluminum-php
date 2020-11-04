@@ -56,15 +56,8 @@
 @endsection
 
 @section('scripts')
-<<<<<<< Updated upstream
     <script src="https://cdn.rawgit.com/plentz/jquery-maskmoney/master/dist/jquery.maskMoney.min.js"></script>
     <script>
         $('#price').maskMoney({allowNegative: false, thousands: '.', decimal: ','});
     </script>
-=======
-    <!-- <script src="https://cdn.rawgit.com/plentz/jquery-maskmoney/master/dist/jquery.maskMoney.min.js"></script>
-    <script>
-        $('#price').maskMoney({allowNegative: false, thousands: '.', decimal: ','});
-    </script> -->
->>>>>>> Stashed changes
 @endsection
