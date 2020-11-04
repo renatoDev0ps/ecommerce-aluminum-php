@@ -51,3 +51,13 @@
         </div>
     </form>
 @endsection
+
+@section('scripts')
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#phone").inputmask({"mask": "(99) 9999-9999"}); //specifying options
+            $("#mobile_phone").inputmask({"mask": "(99) 99999-9999"}); //specifying options
+        });
+    </script>
+@endsection

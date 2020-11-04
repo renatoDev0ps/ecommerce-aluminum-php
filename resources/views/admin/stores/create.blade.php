@@ -20,14 +20,14 @@
         </div>
         <div class="form-group">
             <label for="">Telefone</label>
-            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{old('phone')}}">
+            <input type="text" name="phone" id="phone" class="form-control @error('phone') is-invalid @enderror" value="{{old('phone')}}">
             @error('phone')
                 <div class="invalid-feedback">{{$message}}</div>
             @enderror
         </div>
         <div class="form-group">
             <label for="">Celular/Whatsapp</label>
-            <input type="text" name="mobile_phone" class="form-control @error('mobile_phone') is-invalid @enderror" value="{{old('mobile_phone')}}">
+            <input type="text" name="mobile_phone" id="mobile_phone" class="form-control @error('mobile_phone') is-invalid @enderror" value="{{old('mobile_phone')}}">
             @error('mobile_phone')
                 <div class="invalid-feedback">{{$message}}</div>
             @enderror
@@ -45,4 +45,14 @@
             <button type="submit" class="btn btn-success btn-lg">Criar Loja</button>
         </div>
     </form>
+@endsection
+
+@section('scripts')
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#phone").inputmask({"mask": "(99) 9999-9999"}); //specifying options
+            $("#mobile_phone").inputmask({"mask": "(99) 99999-9999"}); //specifying options
+        });
+    </script>
 @endsection

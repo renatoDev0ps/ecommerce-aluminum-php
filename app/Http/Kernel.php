@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'user.has.store' => \App\Http\Middleware\UserHasStoreMiddleware::class,
         'access.control.store.admin' => \App\Http\Middleware\AccessControlStoreAdmin::class,
+        'user.has.no.store' => \App\Http\Middleware\UserHasNoStoreMiddleware::class,
     ];
 
     /**

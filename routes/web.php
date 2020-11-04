@@ -42,7 +42,7 @@ Route::group(['middleware' => ['auth', 'access.control.store.admin']], function(
         Route::get('notifications/read/{notification}', 'NotificationController@read')->name('notifications.read');
 
         Route::resource('stores', 'StoreController');
-        Route::resource('products', 'ProductController');
+        Route::resource('products', 'ProductController')->middleware('user.has.no.store');
         Route::resource('categories', 'CategoryController');
 
         Route::post('photo/remove', 'ProductPhotoController@removePhoto')->name('photo.remove');

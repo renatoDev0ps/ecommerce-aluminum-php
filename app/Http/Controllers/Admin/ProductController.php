@@ -17,6 +17,7 @@ class ProductController extends Controller
     {
         $this->product = $product;
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -53,6 +54,8 @@ class ProductController extends Controller
     {
         $data = $request->all();
         $categories = $request->get('categories', null);
+
+        $data['price'] = formatPriceToDatabase(($data['price']));
 
         $store = auth()->user()->store;
         $product = $store->products()->create($data);
