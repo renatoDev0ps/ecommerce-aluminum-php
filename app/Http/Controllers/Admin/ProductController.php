@@ -54,6 +54,8 @@ class ProductController extends Controller
     {
         $data = $request->all();
         $categories = $request->get('categories', null);
+// dd($data);
+        // $data['price'] = formatPriceToDatabase(($data['price']));
 
         $data['price'] = formatPriceToDatabase(($data['price']));
 
