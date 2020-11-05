@@ -4,11 +4,11 @@
     <div class="row">
         <div class="col-4">
             @if($product->photos->count())
-            <img src="{{asset('storage/' . $product->photos->first()->image)}}" alt="" class="card-img-top">
+            <img src="{{asset('storage/' . $product->thumb)}}" alt="" class="card-img-top">
                 <div class="row" style="margin-top: 20px;">
                     @foreach($product->photos as $photo)
                         <div class="col-4">
-                            <img src="{{asset('storage/' . $photo->first()->image)}}" alt="" class="img-fluid">
+                            <img src="{{asset('storage/' . $photo->image)}}" alt="" class="img-fluid">
                         </div>
                     @endforeach
                 </div>
