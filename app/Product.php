@@ -4,21 +4,17 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Support\Str;
+use App\Traits\Slug;
 
 class Product extends Model
 {
+    use Slug;
+
     protected $fillable = ['name', 'description', 'body', 'price', 'slug'];
 
     public function getThumbAttribute()
     {
         return $this->photos->first()->image;
-    }
-
-    public function setNameAttribute($value)
-    {
-        $this->attributes['name'] = $value;
-        $this->attributes['slug'] = Str::slug($value);
     }
 
     public function store()
